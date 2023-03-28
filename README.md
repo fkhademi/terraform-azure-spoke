@@ -9,13 +9,13 @@ Deploys a spoke VNET, attaches it to a hub and assigns RFC1918 routes
 module "vnet" {
   source        = "git::https://github.com/fkhademi/terraform-azure-spoke.git"
 
-  projectname		= "frey"
-  region	        = "West Europe"
-  rg_name	        = "my_rg"
-  cidr              = "10.10.0.0/24"
-  loadbalancer_ip	= "192.168.1.20"
-  hub_vnet_name     = "hub_vnet"
-  hub_vnet_id       = "17dcf287-c4a0-47ea-ab49-fb68c121321"
+  projectname     = "frey"
+  region          = "West Europe"
+  rg_name         = "my_rg"
+  cidr            = "10.10.0.0/24"
+  loadbalancer_ip = "192.168.1.20"
+  hub_vnet_name   = "hub_vnet"
+  hub_vnet_id     = "17dcf287-c4a0-47ea-ab49-fb68c121321"
 
 }
 ```
